@@ -6,8 +6,8 @@
 // decrement() reduces the current value by 1 and then returns it.
 // reset() sets the current value to init and then returns it.
 
-var createCounter = function(init) {
-  let integer = init;
+var createCounter = function(n) {
+  let integer = n;
 
   const increment = () => {
       integer++;
@@ -20,7 +20,7 @@ var createCounter = function(init) {
   };
 
   const reset = () => {
-      integer = init;
+      integer = n;
       return integer;
   };
 
